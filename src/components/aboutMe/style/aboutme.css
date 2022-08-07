@@ -1,0 +1,37 @@
+.aboutMe {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    background-image: url(../../../assets/img/nosotros.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    
+}
+@media screen and (min-width: 768px) {
+    .aboutMe {
+        height: unset;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+.aboutMe-content {
+    background-color: var(--white);
+    /* padding: 2rem; */
+}
+@media screen and (min-width: 520px) {
+    .aboutMe-content {
+        padding: 0 20rem;
+        grid-column: 1/ 4;
+    }
+}
+@media screen and (min-width: 998px) {
+    .aboutMe-content {
+        grid-column: 2 / 4;
+        border-radius: 0 0 0 1rem;
+        padding-left: 2rem;
+        padding-right: 12rem;
+        text-align: justify;
+    }
+}
+.aboutMe-content h2,
+.aboutMe-content p {
+    margin-bottom: 1rem;
+}
