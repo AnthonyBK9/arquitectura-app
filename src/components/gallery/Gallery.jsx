@@ -4,7 +4,7 @@ import './style/gallery.css'
 
 const Gallery = () => {
   return (
-    <section className="container mt-5">
+    <section className="container mt-5" id="gallery">
         <h2>Galería</h2>
         <div className="gallery">
             <div className="image">
