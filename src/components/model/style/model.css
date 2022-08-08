@@ -1,0 +1,56 @@
+.model {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    margin-bottom: 5rem;
+}
+@media screen and (min-width: 768px) {
+    .model {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+.model-content {
+    padding-bottom: 2.5rem;
+    background-color: var(--white);
+    text-align: justify;
+}
+.basico {
+    background-image: url(../../../assets/img/modelo_basico.jpg);
+}
+@media screen and (min-width: 768px) {
+    .basico {
+        background-position: top right;
+    }
+    .basico .model-content {
+        grid-row: 2/3;
+        padding: 2rem 2rem 2rem 0;
+        border-radius: 0 2rem 0 0;
+    }
+}
+.premier {
+    background-image: url(../../../assets/img/modelo_premier.jpg);
+}
+@media screen and (min-width: 768px) {
+    .premier {
+        background-position: top left;
+    }
+    .premier .model-content {
+        grid-column: 2 / 3;
+        padding: 2rem 0 2rem 2rem;
+        border-radius: 0 0 0 2rem;
+    }
+}
+.elite {
+    background-image: url(../../../assets/img/modelo_elite.jpg);
+}
+@media screen and (min-width: 768px) {
+    .elite {
+        background-position: top right;
+    }
+    .elite .model-content {
+        grid-column: 1 / 2;
+        padding: 0 2rem 2rem 2rem;
+        border-radius: 0 0 2rem 0;
+    }
+}
